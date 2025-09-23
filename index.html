@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner container">
+      <div class="logo">Welcome To<span> Portfolio</span></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content container">
+      <h1>Hello, I'm <span><small>ASAPU DURGA PRASAD</small></span></h1>
+      <p>BSc Cloud Computing Student • Web Developer • Tech Enthusiast</p>
+      <a class="btn" href="#contact">Hire Me</a>
+    </div>
+  </header>
+
+  <!-- MAIN GRID -->
+  <div class="main-grid container">
+
+    <!-- SIDE TABS -->
+    <div class="side-tabs">
+      <button class="tab-btn active" onclick="openTab('aboutTab')">About Me</button>
+      <button class="tab-btn" onclick="openTab('skillsTab')">Skills</button>
+      <button class="tab-btn" onclick="openTab('projectsTab')">Projects</button>
+      <button class="tab-btn" onclick="openTab('certTab')">Certificates</button>
+      <button class="tab-btn" onclick="openTab('contactTab')">Contact Me</button>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- ABOUT -->
+      <section id="aboutTab" class="tab-section" style="display:block;">
+        <div class="about-grid">
+          <div class="about-card">
+            <img class="profile" src="prasad.jpg" alt="Profile Picture" />
+            <h2>ASAPU DURGA PRASAD</h2>
+            <p class="muted">BSc Cloud Computing Student</p>
+            <p>
+              To effectively contribute to the organization where I will work with continuous learning and innovation.  
+              People management, communication skills, excelling in whatever I undertake & adding values to the organization goals.  
+              <br>- Sports, fitness or wellness activities  
+              <br>- Travel and explore new cultures  
+              <br>- Gardening  
+            </p>
+            <button class="edu-btn" onclick="toggleEducation()">Show Education</button>
+            <div id="education" class="education-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage / CGPA</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10th</td>
+                    <td>ZPH School, Visakhapatnam</td>
+                    <td>2020-2021</td>
+                    <td>73%</td>
+                  </tr>
+                  <tr>
+                    <td>Intermediate</td>
+                    <td>Basara Junior College, Visakhapatnam</td>
+                    <td>2021-2023</td>
+                    <td>63.5%</td>
+                  </tr>
+                  <tr>
+                    <td>BSc Cloud Computing</td>
+                    <td>Andhra University</td>
+                    <td>2023-2026</td>
+                    <td>6.25 CGPA</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h3>Quick Info</h3>
+            <ul class="facts">
+              <li><strong>Email:</strong> <a href="mailto:asapudurga.ad262@gmail.com">asapudurga.ad262@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+919160028530">+91 9160028530</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/AsapuPrasad2005" target="_blank">github.com/AsapuPrasad2005</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/asapudurga" target="_blank">linkedin.com/in/asapudurga</a></li>
+              <li><strong>Location:</strong> VISAKHAPATNAM, INDIA</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skillsTab" class="tab-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">☁️ Cloud Computing</div>
+          <div class="skill">💻 HTML / CSS / JS</div>
+          <div class="skill">⚛️ React.js</div>
+          <div class="skill">🐍 Python</div>
+          <div class="skill">🗄️ Databases</div>
+          <div class="skill">🚀 DevOps</div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projectsTab" class="tab-section">
+        <h2>Projects</h2>
+        <div class="projects">
+
+          <!-- Project 1 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Face Recognition</h3>
+                <img src="fece.jpeg" alt="Face Recognition Project" />
+                <p>Computer vision project to recognize faces using AI.</p>
+              </div>
+              <div class="card-back">
+                <h3>More Details</h3>
+                <p>
+                  Implemented using Python, OpenCV, and the <strong>face_recognition</strong> library (built on dlib).  
+                  Real-time detection, accurate recognition, and automatic attendance marking in CSV.  
+                  <br><br>
+                  <a href="https://github.com/AsapuPrasad2005" target="_blank" class="btn">View Project</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Face Recognition Attendance System</h3>
+                <img src="face2.png" alt="Attendance Project" />
+                <p>AI-powered attendance marking system with face detection.</p>
+              </div>
+              <div class="card-back">
+                <h3>More Details</h3>
+                <p>
+                  Built with Python, OpenCV, and Tkinter.  
+                  Allows student registrations, captures face images, trains a model,  
+                  and marks attendance in CSV with timestamps.  
+                  <br><br>
+                  <a href="https://github.com/AsapuPrasad2005/face-recognition-attendance" target="_blank" class="btn">View Project</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>Restaurant Management System</h3>
+                <img src="bill.png" alt="Restaurant Project" />
+                <p>Python Tkinter desktop app for orders, menus & billing.</p>
+              </div>
+              <div class="card-back">
+                <h3>More Details</h3>
+                <p>
+                  Developed with <strong>Python Tkinter</strong>.  
+                  Customers select food, calculate totals, generate bills & send via email.  
+                  <br>
+                  <em>Features:</em> GUI, bill calculation, email integration, order tracking.  
+                  <br><br>
+                  <a href="https://github.com/AsapuPrasad2005/restaurant-project" target="_blank" class="btn">View Project</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CERTIFICATES -->
+      <section id="certTab" class="tab-section">
+        <h2>Certificates & Hackathons</h2>
+        <ul class="cert-list">
+          <li>🏆 Hackathon 1 — DevOps</li>
+          <li>🏅 Hackathon 2 — Advanced Web Technologies</li>
+          <li>💼 Internship Certificate — Full Stack</li>
+        </ul>
+
+        <div class="cert-grid">
+          <div class="cert-card"><img src="ESS1.png" alt="Python Cisco ESS1" /><p>Python Cisco ESS1</p></div>
+          <div class="cert-card"><img src="ESS2.png" alt="Cisco ESS2" /><p>Cisco ESS2</p></div>
+          <div class="cert-card"><img src="REDHAT.png" alt="RedHat Python" /><p>RedHat Python</p></div>
+          <div class="cert-card"><img src="CLG.png" alt="College Python" /><p>College Python</p></div>
+          <div class="cert-card"><img src="C.png" alt="C LANGUAGE" /><p>C LANGUAGE</p></div>
+          <div class="cert-card"><img src="devops.jpeg" alt="DevOps Certificate" /><p>DevOps Certificate</p></div>
+          <div class="cert-card"><img src="WEB TEC.jpeg" alt="Advanced Web Technologies" /><p>Advanced Web Technologies</p></div>
+          <div class="cert-card"><img src="INTERNSHIP.jpeg" alt="Internship Full Stack" /><p>Internship Full Stack</p></div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contactTab" class="tab-section">
+        <h2>Contact Me</h2>
+        <p>📧 Email: <a href="mailto:asapudurga.ad262@gmail.com">asapudurga.ad262@gmail.com</a></p>
+        <p>🌐 GitHub: <a href="https://github.com/AsapuPrasad2005" target="_blank">github.com/AsapuPrasad2005</a></p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/asapudurga" target="_blank">linkedin.com/in/asapudurga</a></p>
+        <p>📱 Phone: <a href="tel:+919160028530">+91 9160028630</a></p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2025 PRASAD • Built with ❤️ HTML & CSS</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    function toggleEducation() {
+      const edu = document.getElementById('education');
+      edu.style.display = edu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function toggleMenu(hamburger) {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    }
+
+    function openTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-section');
+      tabs.forEach(tab => tab.style.display = 'none');
+
+      document.getElementById(tabId).style.display = 'block';
+
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
